@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Calendário</title>
+<meta name="theme-color" content="#1a1a2e">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar">
+    <button id="prevBtn" class="navBtn" aria-label="Mês anterior">‹</button>
+    <h1 id="monthLabel"></h1>
+    <button id="nextBtn" class="navBtn" aria-label="Próximo mês">›</button>
+  </header>
+
+  <div class="weekdays">
+    <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+  </div>
+
+  <div id="grid" class="grid"></div>
+
+  <footer class="footer">
+    <button id="todayBtn">Hoje</button>
+    <span class="hint">Toque num dia para marcar/desmarcar</span>
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
